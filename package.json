@@ -1,0 +1,47 @@
+{
+  "name": "pilates_strona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint js/",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "build": "npm-run-all build:* test",
+    "build:clean": "rimraf css/*",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "watch": "npm-run-all build -p watch:*",
+    "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all watch-dev:*",
+    "watch-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch-dev:autoprefixer": "autoprefixer-cli css/style.css",
+    "watch:browsersync": "browser-sync start --server --files css/*.css *.html --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaceksanko/Pilates_strona.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaceksanko/Pilates_strona/issues"
+  },
+  "homepage": "https://github.com/jaceksanko/Pilates_strona#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "globstar": "^1.0.0",
+    "jshint": "^2.9.5",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2"
+  }
+}
