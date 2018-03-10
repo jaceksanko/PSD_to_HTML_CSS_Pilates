@@ -1,70 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700");
-html {
-  font-size: 16px;
-}
+html { font-size: 16px; }
 
-h1 {
-  font-size: 4.375rem;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-}
+h1 { font-size: 4.375rem; font-family: "Montserrat", sans-serif; color: white; }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
+.container { max-width: 940px; margin: 0 auto; }
 
-header {
-  height: 100vh;
-  background-image: url("../images/DSC03996_yellow.png");
-  background-size: cover;
-}
+header { height: 100vh; background-image: url("../images/DSC03996_yellow.png"); background-size: cover; }
 
-nav ul {
-  list-style-type: none;
-}
+nav ul { list-style-type: none; }
 
-nav ul li {
-  display: inline-block;
-}
+nav ul li { display: inline-block; }
 
-nav ul a {
-  text-decoration: none;
-  color: white;
-  line-height: 35px;
-  font-size: 1.125rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
+nav ul a { text-decoration: none; color: white; line-height: 35px; font-size: 1.125rem; font-family: "Montserrat", sans-serif; font-weight: bold; }
 
-.logo img {
-  -o-object-fit: none;
-     object-fit: none;
-}
+.logo img { -o-object-fit: none; object-fit: none; }
 
-.jumbotron {
-  text-align: center;
-  padding: 15% 0;
-}
+.jumbotron { text-align: center; padding: 15% 0; }
 
-.jumbotron button {
-  height: 45px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 0 15px;
-  transition: transform 0.5s;
-}
+.jumbotron button { height: 45px; color: white; background-color: transparent; border: 2px solid white; font-family: "Montserrat", sans-serif; font-size: 0.875rem; font-weight: 400; text-transform: uppercase; padding: 0 15px; transition: transform 0.5s; }
 
-.jumbotron button:focus {
-  outline: none;
-}
+.jumbotron button:focus { outline: none; }
 
-.jumbotron button:hover {
-  transform: scale(1.05);
-}
-/*# sourceMappingURL=style.css.map */
+.jumbotron button:hover { transform: scale(1.05); }
