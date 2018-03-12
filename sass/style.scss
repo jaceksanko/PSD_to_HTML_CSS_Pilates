@@ -2,6 +2,7 @@
 
 $font-paragraph-subtitle: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
+$red-color-site: #e74c3c;
 
 html {
     font-size: 16px;
@@ -24,53 +25,216 @@ header {
     height: 100vh;
     background-image: url('../images/DSC03996_yellow.png');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-nav {       
+nav {
     ul {
         list-style-type: none;
         li {
-        display: inline-block;  
+        display: inline-block;
+        &:hover a {
+            color: $red-color-site;
+        }
         }
     
         a {
             text-decoration: none;
             color: white;
-            line-height: 35px;
             font-size: 1.125rem;
             font-family: $font-title;
             font-weight: bold;
-        
         }
-    
+    }
+}
+#menu-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-icon-open-close {
+    display: none;
+}
+
+[class*='menu-icon-line-'] {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.line-menu-icon-move .menu-icon-line-1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.line-menu-icon-move .menu-icon-line-2 {
+    opacity: 0;
+}
+
+.line-menu-icon-move .menu-icon-line-3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+
+@-webkit-keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+}
+@keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+} 
+
+
+/* .fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeOutUp {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    }
+    @keyframes fadeOutUp {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    }  */
+
+
+
+
+.logo {
+    a {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        object-fit: none;
     }
 }
 
-.logo img {
-    object-fit: none;
-}
+
 
 .jumbotron {
     text-align: center;
-    padding: 15% 0;
-    
-    button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+}
+
+.hero a {
+    display: flex;    
+    justify-content: center;
+}
+
+.button {
+        width: 200px;
         height: 45px;
-        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: transparent;
         border: 2px solid white;
+        color: white;
         font-family: $font-title;
         font-size: 0.875rem;
         font-weight: 400;
         text-transform: uppercase;
         padding: 0 15px;
-        transition: transform 0.5s;
+        transition: all 0.5s;
         &:focus {
             outline: none;
         }
         &:hover { 
-            transform: scale(1.05)
+            transform: scale(1.05);
+        }
+}
+
+
+@media (max-width: 992px) {
+    nav {
+        
+        ul {
+            padding:0;
+            margin: 0;
+            li {
+                margin: 5px 0;
+            }
+        }
+        .menu1 {
+            margin-top: 10px;
+            order: 2;
+        }
+        .menu2 {
+            order: 3;
+        }
+        .logo {
+            order: 1;
+            margin-top: 10px;
         }
     }
+.menu1, .menu2 {
+    display: none;
+}
+    .menu-icon-open-close {
+        display: inline-block;
+    }
+    
+    
+
+
+
+    
 }
 
