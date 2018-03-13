@@ -3,6 +3,7 @@
 $font-paragraph-subtitle: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
 $red-color-site: #e74c3c;
+$grey-color-site: #707070;
 
 html {
     font-size: 16px;
@@ -12,6 +13,44 @@ h1 {
     font-size: 4.375rem;
     font-family: $font-title;
     color: white;
+}
+
+h2 {
+    font-family: $font-title;
+    font-size: 1.25rem;
+    color: $red-color-site;
+    font-weight: 700;
+    padding-top: 8px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-right: 22px;
+    .fa-square-full {
+        font-size: 0.95rem;
+        position: absolute;
+        top:13px;
+        right: -25px;
+    } 
+}
+
+h3 {
+    font-family: $font-title;
+    font-weight: 700;
+    color: black;
+    font-size: 3.75rem;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 40px 0;
+    line-height: 3rem;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: $font-paragraph-subtitle;
+    color: $grey-color-site;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 
@@ -30,6 +69,8 @@ header {
     justify-content: center;
     align-content: center;
 }
+
+/* menu */
 
 nav {
     ul {
@@ -50,6 +91,9 @@ nav {
         }
     }
 }
+
+/* Hamburger menu start*/
+
 #menu-icon {
     position: absolute;
     top: 0.5rem;
@@ -147,7 +191,7 @@ nav {
     }
     }  */
 
-
+/* Hamburger menu end */
 
 
 .logo {
@@ -160,7 +204,7 @@ nav {
     }
 }
 
-
+/* Jumbotron */
 
 .jumbotron {
     text-align: center;
@@ -201,6 +245,21 @@ nav {
         }
 }
 
+/* About me */
+
+.about-me {
+    margin-top: 50px;
+}
+
+
+.about-me-text {
+    line-height: 2.2rem;
+    text-align: justify;
+}
+
+.about-me-foto img {
+    width: 100%;
+}
 
 @media (max-width: 992px) {
     nav {
@@ -230,11 +289,5 @@ nav {
     .menu-icon-open-close {
         display: inline-block;
     }
-    
-    
-
-
-
-    
 }
 

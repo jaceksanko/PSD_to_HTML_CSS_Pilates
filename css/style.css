@@ -3,21 +3,28 @@ html { font-size: 16px; }
 
 h1 { font-size: 4.375rem; font-family: "Montserrat", sans-serif; color: white; }
 
-.container { max-width: 940px; margin: 0 auto; }
+h2 { font-family: "Montserrat", sans-serif; font-size: 1.25rem; color: #e74c3c; font-weight: 700; padding-top: 8px; text-align: right; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-right: 22px; }
 
+h2 .fa-square-full { font-size: 0.95rem; position: absolute; top: 13px; right: -25px; }
+
+h3 { font-family: "Montserrat", sans-serif; font-weight: 700; color: black; font-size: 3.75rem; text-align: right; text-transform: uppercase; margin: 40px 0; line-height: 3rem; letter-spacing: 3px; }
+
+p { font-family: "Lato", sans-serif; color: #707070; font-size: 1.25rem; font-weight: 300; }
+
+.container { max-width: 940px; margin: 0 auto; }
 
 header { height: 100vh; background-image: url("../images/DSC03996_yellow.png"); background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; }
 
-
+/* menu */
 nav ul { list-style-type: none; }
 
 nav ul li { display: inline-block; }
-
 
 nav ul li:hover a { color: #e74c3c; }
 
 nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family: "Montserrat", sans-serif; font-weight: bold; }
 
+/* Hamburger menu start*/
 #menu-icon { position: absolute; top: 0.5rem; right: 1rem; margin: 0; padding: 0; cursor: pointer; }
 
 .menu-icon-open-close { display: none; }
@@ -38,10 +45,12 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
     transform: none; } }
 
 /* .fadeOutUp { -webkit-animation-name: fadeOutUp; animation-name: fadeOutUp; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes fadeOutUp { 0% { opacity: 1; } 100% { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } } @keyframes fadeOutUp { 0% { opacity: 1; } 100% { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } }  */
+/* Hamburger menu end */
 .logo a { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
 .logo img { -o-object-fit: none; object-fit: none; }
 
+/* Jumbotron */
 .jumbotron { text-align: center; height: 100%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .jumbotron a { text-decoration: none; }
@@ -53,6 +62,13 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 .button:focus { outline: none; }
 
 .button:hover { transform: scale(1.05); }
+
+/* About me */
+.about-me { margin-top: 50px; }
+
+.about-me-text { line-height: 2.2rem; text-align: justify; }
+
+.about-me-foto img { width: 100%; }
 
 @media (max-width: 992px) { nav ul { padding: 0; margin: 0; }
   nav ul li { margin: 5px 0; }
