@@ -30,5 +30,13 @@ window.addEventListener('resize', function(){
     }
     else {
         iconsMenu.style.display = 'block';
+        if (iconOpenClose.classList.contains('line-menu-icon-move') == false) {
+            menuList1.style.display = 'none';
+            menuList2.style.display = 'none';
+        }
+        else {
+            menuList1.style.display = 'flex';
+            menuList2.style.display = 'flex';
+        }
     }
 });

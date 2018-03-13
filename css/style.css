@@ -7,7 +7,7 @@ h2 { font-family: "Montserrat", sans-serif; font-size: 1.25rem; color: #e74c3c; 
 
 h2 .fa-square-full { font-size: 0.95rem; position: absolute; top: 13px; right: -25px; }
 
-h3 { font-family: "Montserrat", sans-serif; font-weight: 700; color: black; font-size: 3.75rem; text-align: right; text-transform: uppercase; margin: 40px 0; line-height: 3rem; letter-spacing: 3px; }
+h3 { font-family: "Montserrat", sans-serif; font-weight: 700; color: black; font-size: 3rem; text-align: right; text-transform: uppercase; margin-top: 60px; margin-bottom: 20px; line-height: 2.5rem; letter-spacing: 3px; }
 
 p { font-family: "Lato", sans-serif; color: #707070; font-size: 1.25rem; font-weight: 300; }
 
@@ -69,6 +69,31 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 .about-me-text { line-height: 2.2rem; text-align: justify; }
 
 .about-me-foto img { width: 100%; }
+
+/* blog */
+.blog { margin-top: 50px; background-color: #fafafa; }
+
+.box-tag { position: relative; }
+
+.box-tag img { width: 100%; height: 100%; }
+
+.box-tag-image { background-color: white; }
+
+.post-tag { position: absolute; left: 21px; top: 5px; font-family: "Lato", sans-serif; font-size: 0.75rem; font-weight: 400; line-height: 24px; padding: 0 10px; letter-spacing: 2px; text-transform: uppercase; text-align: center; background-color: white; }
+
+.blog-info { background-color: white; padding: 20px 15px; margin-top: 0; }
+
+.blog-info .fa-sign-in-alt { color: #e74c3c; }
+
+.date { font-size: 0.625rem; }
+
+.date .fa-square-full { color: #e74c3c; font-size: 0.625rem; }
+
+.blog-info-title { font-size: 1.25rem; text-align: left; line-height: 1.25rem; letter-spacing: 0px; margin-top: 20px; }
+
+.blog-info-p { font-size: 0.75rem; }
+
+.read-more { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
 
 @media (max-width: 992px) { nav ul { padding: 0; margin: 0; }
   nav ul li { margin: 5px 0; }
