@@ -1,3 +1,5 @@
+@import 'flexboxgrid.scss';
+@import 'normalize.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700');
 
 $font-paragraph-subtitle: 'Lato', sans-serif;
@@ -5,6 +7,10 @@ $font-title: 'Montserrat', sans-serif;
 $red-color-site: #e74c3c;
 $grey-color-site: #707070;
 $background-grey-site: #fafafa;
+
+a {
+    text-decoration: none;
+}
 
 html {
     font-size: 16px;
@@ -332,6 +338,40 @@ nav {
 .read-more {
     display: flex;
     justify-content: flex-end;
+}
+.btn-all-posts {
+    padding: 0 0.75rem;    
+    border-left: 2px solid $red-color-site;
+    border-bottom: 2px solid $red-color-site;
+    position: relative;
+    p {
+        font-size: 0.75rem;
+        font-family: $font-title;
+        font-weight: 700;
+    }
+}
+
+.btn-all-posts::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        bottom: 0;
+        width: 2px;
+        height: 50%;
+        background-color: $red-color-site;
+}
+
+.btn-all-posts::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    width: 80%;
+    height: 2px;
+    background-color: $red-color-site;
+    
 }
 
 @media (max-width: 992px) {
