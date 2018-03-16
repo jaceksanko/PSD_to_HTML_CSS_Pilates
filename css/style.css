@@ -357,7 +357,12 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
   100% { opacity: 1;
     transform: none; } }
 
-/* .fadeOutUp { -webkit-animation-name: fadeOutUp; animation-name: fadeOutUp; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes fadeOutUp { 0% { opacity: 1; } 100% { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } } @keyframes fadeOutUp { 0% { opacity: 1; } 100% { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } }  */
+.fadeOutUp { animation-name: fadeOutUp; animation-duration: 1s; animation-fill-mode: both; }
+
+@keyframes fadeOutUp { 0% { opacity: 1; }
+  100% { opacity: 0;
+    transform: translate3d(0, -100%, 0); } }
+
 /* Hamburger menu end */
 .logo a { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -384,7 +389,7 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 .about-me-foto img { width: 100%; }
 
 /* blog */
-.blog { margin-top: 50px; background-color: #fafafa; }
+.blog { margin-top: 50px; background-color: #fafafa; padding-bottom: 150px; }
 
 .box-tag { position: relative; }
 
@@ -402,11 +407,13 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .date .fa-square-full { color: #e74c3c; font-size: 0.625rem; }
 
-.blog-info-title { font-size: 1.25rem; text-align: left; line-height: 1.25rem; letter-spacing: 0px; margin-top: 20px; }
+.blog-info-title { font-size: 1.25rem; text-align: left; line-height: 1.25rem; letter-spacing: 0px; margin-top: 20px; height: 4.25rem; }
 
-.blog-info-p { font-size: 0.75rem; }
+.blog-info-p { font-size: 0.75rem; height: 4.5rem; }
 
-.read-more { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
+.read-more { font-size: 1.3rem; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
+
+.box-btn-all-posts { margin-top: 80px; }
 
 .btn-all-posts { padding: 0 0.75rem; border-left: 2px solid #e74c3c; border-bottom: 2px solid #e74c3c; position: relative; }
 
@@ -416,10 +423,32 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .btn-all-posts::before { content: ""; position: absolute; left: 0; z-index: 100; top: 0; width: 80%; height: 2px; background-color: #e74c3c; }
 
-@media (max-width: 992px) { nav ul { padding: 0; margin: 0; }
+/* pilates info section */
+.pilates-info { display: -ms-flexbox; display: flex; }
+
+.pilates-info-text { display: -ms-flexbox; display: flex; height: 500px; background-image: url("../images/foto_pilates_info.png"); background-size: cover; }
+
+.pilates-info-text p { color: white; margin-top: 40px; text-align: justify; }
+
+.pilates-info-video { margin: 0; padding: 0; display: -ms-flexbox; display: flex; }
+
+.pilates-info-video iframe { width: 100%; height: 500px; }
+
+.pilates-info-subtitle { color: white; }
+
+.pilates-info-text-box { padding: 0 50px; }
+
+@media (max-width: 991.98px) { .row { margin: 0; }
+  h1 { font-size: 3rem; }
+  nav ul { padding: 0; margin: 0; }
   nav ul li { margin: 5px 0; }
   nav .menu1 { margin-top: 10px; -ms-flex-order: 2; order: 2; }
   nav .menu2 { -ms-flex-order: 3; order: 3; }
   nav .logo { -ms-flex-order: 1; order: 1; margin-top: 10px; }
-  .menu1, .menu2 { display: none; }
-  .menu-icon-open-close { display: inline-block; } }
+  .menu1, .menu2 { opacity: 0; }
+  .menu-icon-open-close { display: inline-block; }
+  .pilates-info { -ms-flex-direction: column; flex-direction: column; } }
+
+@media (min-width: 992px) { .menu1, .menu2 { display: -ms-flexbox; display: flex; }
+  #menu-icon { display: none; }
+  .fadeOutUp { animation: none; } }

@@ -170,7 +170,7 @@ nav {
 } 
 
 
-/* .fadeOutUp {
+.fadeOutUp {
     -webkit-animation-name: fadeOutUp;
     animation-name: fadeOutUp;
     -webkit-animation-duration: 1s;
@@ -197,7 +197,7 @@ nav {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     }
-    }  */
+    }
 
 /* Hamburger menu end */
 
@@ -275,6 +275,7 @@ nav {
 .blog {
     margin-top: 50px;
     background-color: $background-grey-site;
+    padding-bottom: 150px;
 }
 
 .box-tag {
@@ -329,15 +330,22 @@ nav {
     line-height: 1.25rem;
     letter-spacing: 0px;
     margin-top: 20px;
+    height: 4.25rem;
 }
 
 .blog-info-p {
     font-size:  0.75rem;
+    height: (6*0.75rem);
 }
 
 .read-more {
+    font-size: 1.3rem;
     display: flex;
     justify-content: flex-end;
+}
+
+.box-btn-all-posts {
+    margin-top: 80px;
 }
 .btn-all-posts {
     padding: 0 0.75rem;    
@@ -374,7 +382,52 @@ nav {
     
 }
 
-@media (max-width: 992px) {
+/* pilates info section */
+
+.pilates-info {
+    display: flex;
+}
+
+.pilates-info-text {
+    display: flex;
+    height: 500px;
+    background-image: url('../images/foto_pilates_info.png');
+    background-size: cover;
+    p {
+        color: white;
+        margin-top: 40px;
+        text-align: justify;
+    }
+}
+
+.pilates-info-video {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.pilates-info-subtitle {
+    color: white;
+}
+
+.pilates-info-text-box {
+    padding: 0 50px;
+}
+
+
+@media (max-width: 991.98px) {
+    .row {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
     nav {
         
         ul {
@@ -396,11 +449,30 @@ nav {
             margin-top: 10px;
         }
     }
-.menu1, .menu2 {
-    display: none;
-}
+    .menu1, .menu2 {
+        opacity: 0;
+    }
     .menu-icon-open-close {
         display: inline-block;
+    }
+
+
+    .pilates-info {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu1, .menu2 {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .fadeOutUp {
+        animation: none;
     }
 }
 
