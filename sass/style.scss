@@ -418,6 +418,13 @@ nav {
     padding: 0 50px;
 }
 
+.map {
+    height: 300px;
+}
+
+.activities-box {
+    background-color: $background-grey-site;
+}
 
 @media (max-width: 991.98px) {
     .row {

@@ -438,6 +438,10 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .pilates-info-text-box { padding: 0 50px; }
 
+.map { height: 300px; }
+
+.activities-box { background-color: #fafafa; }
+
 @media (max-width: 991.98px) { .row { margin: 0; }
   h1 { font-size: 3rem; }
   nav ul { padding: 0; margin: 0; }
