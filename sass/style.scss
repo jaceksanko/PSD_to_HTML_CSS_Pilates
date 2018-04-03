@@ -4,7 +4,7 @@
 
 $font-paragraph-subtitle: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
-$red-color-site: #e74c3c;
+$red-color-site: #35B52A;
 $grey-color-site: #707070;
 $background-grey-site: #fafafa;
 
@@ -54,6 +54,16 @@ h3 {
     letter-spacing: 3px;
 }
 
+h4 {
+    font-family: $font-title;
+    color:  $grey-color-site;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.35;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 p {
     font-family: $font-paragraph-subtitle;
     color: $grey-color-site;
@@ -61,12 +71,14 @@ p {
     font-weight: 300;
 }
 
+section {
+    padding-bottom: 50px;
+}
 
 .container {
     max-width: 940px;
     margin: 0 auto;
 }
-
 
 header {
     height: 100vh;
@@ -384,13 +396,13 @@ nav {
 
 /* pilates info section */
 
+
 .pilates-info {
     display: flex;
 }
 
 .pilates-info-text {
     display: flex;
-    height: 500px;
     background-image: url('../images/foto_pilates_info.png');
     background-size: cover;
     p {
@@ -406,7 +418,8 @@ nav {
     display: flex;
     iframe {
         width: 100%;
-        height: 500px;
+        height: 100%;
+        min-height: 300px;
     }
 }
 
@@ -422,10 +435,103 @@ nav {
     height: 300px;
 }
 
+/* activities section */
+
 .activities-box {
     background-color: $background-grey-site;
 }
 
+/* contact section */
+.contact {
+    background-color: $background-grey-site;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    img {
+        width: 103px;
+        height: 100px;
+    }
+    h4 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+/* newsletter section */
+.newsletter {
+    background-image: url('../images/foto_pilates_newsletter.png');
+    h3 {
+        color: white;
+    }
+}
+
+.ml-subscribe-form-8297284 {
+    padding-top: 40px;
+}
+
+.ml-subscribe-form-8297284 .form-group {
+    padding: 5px 0;
+    .form-control {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid white;        
+        width: 100%;
+        font-family: $font-paragraph-subtitle;
+        color:  #ffffff;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 2.667;
+        outline-color: white;
+    }
+    
+}
+
+.ml-block-success {
+    display: none;
+}
+
+.primary {
+        background-color: transparent;
+        font-size: 0.75rem;
+        font-family: $font-title;
+        font-weight: 700;
+        color: white;
+        border-top: 0;
+        border-right: 0;
+        padding: 12px;
+        margin-top: 40px;
+        &:hover {
+            background-color: $red-color-site;
+        }
+    }
+footer{
+    background-color:  #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        color:  #ffffff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 2.5;
+        text-align: center;
+    }
+    .fab {
+        font-size: 50px;
+        padding: 20px;
+        color: white;
+        &:hover {
+            color: $red-color-site;
+        }
+
+    }
+}
 @media (max-width: 991.98px) {
     .row {
         margin: 0;

@@ -1,3 +1,6 @@
+
+/* Hamburger menu */
+
 const iconsMenu = document.getElementById('menu-icon');
 const iconOpenClose = document.getElementById('js-menu-icon-open-close');
 const menuList = document.querySelectorAll('nav ul');
@@ -18,6 +21,8 @@ iconOpenClose.addEventListener('click', function(){
         this.classList.remove('line-menu-icon-move');
     }
 });
+
+/*google maps in section activities */
 
 const activitiesMap = document.querySelectorAll('.map');
 
@@ -179,3 +184,16 @@ function initMap() {
         putTheMap(gpsPilates2, activitiesMap[1], places2Text);
         putTheMap(gpsPilates3, activitiesMap[2], places3Text);
 }
+
+/* newsletter  */
+const blockSuccess = document.querySelector('.ml-subscribe-form-8297284 .ml-block-success');
+const blockForm = document.querySelector('.ml-subscribe-form-8297284 .ml-block-form')
+
+blockForm.addEventListener('submit', ml_webform_success_8297284)
+
+function ml_webform_success_8297284() {
+
+  blockSuccess.style.display ='block';
+  blockForm.style.display = 'none';
+  window.close();
+};
