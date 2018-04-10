@@ -186,14 +186,43 @@ function initMap() {
 }
 
 /* newsletter  */
-const blockSuccess = document.querySelector('.ml-subscribe-form-8297284 .ml-block-success');
-const blockForm = document.querySelector('.ml-subscribe-form-8297284 .ml-block-form')
+const blockSuccess = document.querySelector('.subscribe-form .block-success');
+const blockForm = document.querySelector('.subscribe-form .block-form');
+blockForm.addEventListener('submit', webform_success);
 
-blockForm.addEventListener('submit', ml_webform_success_8297284)
-
-function ml_webform_success_8297284() {
-
+function webform_success() {
   blockSuccess.style.display ='block';
   blockForm.style.display = 'none';
-  window.close();
 };
+
+/* blockForm.addEventListener('submit', function(el) {
+  el.preventDefault();
+
+  let xhr = new XMLHttpRequest();
+
+  let nameFormVal = document.querySelector('#nameForm').value;
+  let emailFormVal = document.querySelector('#emailForm').value;
+  const idGroupMailerLite = 9489654;
+
+  xhr.open("POST", "https://api.mailerlite.com/api/v2/groups/" + idGroupMailerLite + "/subscribers");
+  xhr.setRequestHeader("Content-type", "application/json");
+  xhr.setRequestHeader("x-mailerlite-apikey", "46457345786584567956976");
+  xhr.addEventListener('load', function() {
+    if (this.status === 200) {
+      webform_success();
+    }
+});
+  let formData = new FormData();
+      formData.append('name', nameFormVal);
+      formData.append('email', emailFormVal);
+
+  let myJSON = JSON.stringify(formData);
+  xhr.send(myJSON);
+
+function webform_success() {
+  blockSuccess.style.display ='block';
+  blockForm.style.display = 'none';
+};
+
+});
+ */

@@ -4,7 +4,7 @@
 
 $font-paragraph-subtitle: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
-$red-color-site: #35B52A;
+$green-color-site: #3da733;
 $grey-color-site: #707070;
 $background-grey-site: #fafafa;
 
@@ -25,7 +25,7 @@ h1 {
 h2 {
     font-family: $font-title;
     font-size: 1.25rem;
-    color: $red-color-site;
+    color: $green-color-site;
     font-weight: 700;
     padding-top: 8px;
     text-align: right;
@@ -98,7 +98,7 @@ nav {
         li {
         display: inline-block;
         &:hover a {
-            color: $red-color-site;
+            color: $green-color-site;
         }
         }
     
@@ -322,7 +322,7 @@ nav {
     padding: 20px 15px;
     margin-top: 0;
     .fa-sign-in-alt {
-        color: $red-color-site;
+        color: $green-color-site;
         
     }
 }
@@ -331,7 +331,7 @@ nav {
     font-size: 0.625rem;
 
     .fa-square-full {
-        color: $red-color-site;
+        color: $green-color-site;
         font-size: 0.625rem;
     }
 } 
@@ -361,9 +361,16 @@ nav {
 }
 .btn-all-posts {
     padding: 0 0.75rem;    
-    border-left: 2px solid $red-color-site;
-    border-bottom: 2px solid $red-color-site;
+    border-left: 2px solid $green-color-site;
+    border-bottom: 2px solid $green-color-site;
     position: relative;
+    transition: all 1s;
+    &:hover {
+        background-color: $green-color-site;
+        p {
+        color: white;
+        }
+    }
     p {
         font-size: 0.75rem;
         font-family: $font-title;
@@ -379,7 +386,7 @@ nav {
         bottom: 0;
         width: 2px;
         height: 50%;
-        background-color: $red-color-site;
+        background-color: $green-color-site;
 }
 
 .btn-all-posts::before {
@@ -390,7 +397,7 @@ nav {
     top: 0;
     width: 80%;
     height: 2px;
-    background-color: $red-color-site;
+    background-color: $green-color-site;
     
 }
 
@@ -465,16 +472,17 @@ nav {
 /* newsletter section */
 .newsletter {
     background-image: url('../images/foto_pilates_newsletter.png');
+    background-position: bottom;
     h3 {
         color: white;
     }
 }
 
-.ml-subscribe-form-8297284 {
+.subscribe-form {
     padding-top: 40px;
 }
 
-.ml-subscribe-form-8297284 .form-group {
+.subscribe-form .form-group {
     padding: 5px 0;
     .form-control {
         background-color: transparent;
@@ -491,8 +499,11 @@ nav {
     
 }
 
-.ml-block-success {
+.block-success {
     display: none;
+    p {
+        color: white;
+    }
 }
 
 .primary {
@@ -506,10 +517,13 @@ nav {
         padding: 12px;
         margin-top: 40px;
         &:hover {
-            background-color: $red-color-site;
+            background-color: $green-color-site;
         }
     }
-footer{
+
+ /* footer */
+
+footer {
     background-color:  #1c1c1c;
     color: white;
     display: flex;
@@ -517,17 +531,17 @@ footer{
     align-items: center;
     p {
         color:  #ffffff;
-        font-size: 1.25rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 300;
         line-height: 2.5;
         text-align: center;
     }
-    .fab {
+    .fa-w-14 {
         font-size: 50px;
         padding: 20px;
         color: white;
         &:hover {
-            color: $red-color-site;
+            color: $green-color-site;
         }
 
     }
