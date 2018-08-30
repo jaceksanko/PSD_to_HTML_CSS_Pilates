@@ -12,12 +12,16 @@ iconOpenClose.addEventListener('click', function(){
         this.classList.toggle('line-menu-icon-move');
         menuList[0].classList.toggle('fadeInDown');
         menuList[1].classList.toggle('fadeInDown');
+        menuList[0].classList.toggle('menu--display');
+        menuList[1].classList.toggle('menu--display');
     }
     else {
         menuList[0].classList.remove('fadeInDown');
         menuList[1].classList.remove('fadeInDown');
         menuList[0].classList.toggle('fadeOutUp');
         menuList[1].classList.toggle('fadeOutUp');
+        menuList[0].classList.toggle('menu--display');
+        menuList[1].classList.toggle('menu--display');
         this.classList.remove('line-menu-icon-move');
     }
 });

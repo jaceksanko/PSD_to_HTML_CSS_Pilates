@@ -316,7 +316,7 @@ html { font-size: 16px; }
 
 h1 { font-size: 4.375rem; font-family: "Montserrat", sans-serif; color: white; }
 
-h2 { font-family: "Montserrat", sans-serif; font-size: 1.25rem; color: #3da733; font-weight: 700; padding-top: 8px; text-align: right; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-right: 22px; }
+h2 { font-family: "Montserrat", sans-serif; font-size: 1.25rem; color: #35B52A; font-weight: 700; padding-top: 8px; text-align: right; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-right: 22px; }
 
 h2 .fa-square-full { font-size: 0.95rem; position: absolute; top: 13px; right: -25px; }
 
@@ -333,20 +333,22 @@ section { padding-bottom: 50px; }
 header { height: 100vh; background-image: url("../images/DSC03996_yellow.png"); background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; }
 
 /* menu */
+.menu-top { background-color: #f4ffee; line-height: 70px; }
+
 nav ul { list-style-type: none; }
 
 nav ul li { display: inline-block; }
 
-nav ul li:hover a { color: #3da733; }
+nav ul li:hover a { color: #35B52A; }
 
-nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family: "Montserrat", sans-serif; font-weight: bold; }
+nav ul a { text-decoration: none; color: #54775e; font-size: 1.125rem; font-family: "Montserrat", sans-serif; font-weight: bold; }
 
 /* Hamburger menu start*/
 #menu-icon { position: absolute; top: 0.5rem; right: 1rem; margin: 0; padding: 0; cursor: pointer; }
 
 .menu-icon-open-close { display: none; }
 
-[class*='menu-icon-line-'] { width: 35px; height: 5px; background-color: white; margin: 6px 0; transition: 0.4s; }
+[class*='menu-icon-line-'] { width: 35px; height: 5px; background-color: #54775e; margin: 6px 0; transition: 0.4s; }
 
 .line-menu-icon-move .menu-icon-line-1 { transform: rotate(-45deg) translate(-9px, 6px); }
 
@@ -405,11 +407,11 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .blog-info { background-color: white; padding: 20px 15px; margin-top: 0; }
 
-.blog-info .fa-sign-in-alt { color: #3da733; }
+.blog-info .fa-sign-in-alt { color: #35B52A; }
 
 .date { font-size: 0.625rem; }
 
-.date .fa-square-full { color: #3da733; font-size: 0.625rem; }
+.date .fa-square-full { color: #35B52A; font-size: 0.625rem; }
 
 .blog-info-title { font-size: 1.25rem; text-align: left; line-height: 1.25rem; letter-spacing: 0px; margin-top: 20px; height: 4.25rem; }
 
@@ -419,17 +421,17 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .box-btn-all-posts { margin-top: 80px; }
 
-.btn-all-posts { padding: 0 0.75rem; border-left: 2px solid #3da733; border-bottom: 2px solid #3da733; position: relative; transition: all 1s; }
+.btn-all-posts { padding: 0 0.75rem; border-left: 2px solid #35B52A; border-bottom: 2px solid #35B52A; position: relative; transition: all 1s; }
 
-.btn-all-posts:hover { background-color: #3da733; }
+.btn-all-posts:hover { background-color: #35B52A; }
 
 .btn-all-posts:hover p { color: white; }
 
 .btn-all-posts p { font-size: 0.75rem; font-family: "Montserrat", sans-serif; font-weight: 700; }
 
-.btn-all-posts::after { content: ""; position: absolute; right: 0; z-index: 100; bottom: 0; width: 2px; height: 50%; background-color: #3da733; }
+.btn-all-posts::after { content: ""; position: absolute; right: 0; z-index: 100; bottom: 0; width: 2px; height: 50%; background-color: #35B52A; }
 
-.btn-all-posts::before { content: ""; position: absolute; left: 0; z-index: 100; top: 0; width: 80%; height: 2px; background-color: #3da733; }
+.btn-all-posts::before { content: ""; position: absolute; left: 0; z-index: 100; top: 0; width: 80%; height: 2px; background-color: #35B52A; }
 
 /* pilates info section */
 .pilates-info { display: -ms-flexbox; display: flex; }
@@ -479,7 +481,7 @@ nav ul a { text-decoration: none; color: white; font-size: 1.125rem; font-family
 
 .primary { background-color: transparent; font-size: 0.75rem; font-family: "Montserrat", sans-serif; font-weight: 700; color: white; border-top: 0; border-right: 0; padding: 12px; margin-top: 40px; }
 
-.primary:hover { background-color: #3da733; }
+.primary:hover { background-color: #35B52A; }
 
 /* footer */
 footer { background-color: #1c1c1c; color: white; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
@@ -488,16 +490,17 @@ footer p { color: #ffffff; font-size: 1rem; font-weight: 300; line-height: 2.5; 
 
 footer .fa-w-14 { font-size: 50px; padding: 20px; color: white; }
 
-footer .fa-w-14:hover { color: #3da733; }
+footer .fa-w-14:hover { color: #35B52A; }
 
 @media (max-width: 991.98px) { .row { margin: 0; }
   h1 { font-size: 3rem; }
+  .menu-top { background-color: #f4ffee; line-height: normal; }
   nav ul { padding: 0; margin: 0; }
   nav ul li { margin: 5px 0; }
   nav .menu1 { margin-top: 10px; -ms-flex-order: 2; order: 2; }
   nav .menu2 { -ms-flex-order: 3; order: 3; }
   nav .logo { -ms-flex-order: 1; order: 1; margin-top: 10px; }
-  .menu1, .menu2 { opacity: 0; }
+  .menu--display { display: none; }
   .menu-icon-open-close { display: inline-block; }
   .pilates-info { -ms-flex-direction: column; flex-direction: column; } }
 

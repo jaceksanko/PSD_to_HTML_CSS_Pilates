@@ -4,7 +4,7 @@
 
 $font-paragraph-subtitle: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
-$green-color-site: #3da733;
+$green-color-site: #35B52A;
 $grey-color-site: #707070;
 $background-grey-site: #fafafa;
 
@@ -91,6 +91,10 @@ header {
 }
 
 /* menu */
+.menu-top {
+    background-color: #f4ffee;
+    line-height: 70px;
+}
 
 nav {
     ul {
@@ -104,7 +108,7 @@ nav {
     
         a {
             text-decoration: none;
-            color: white;
+            color: #54775e;
             font-size: 1.125rem;
             font-family: $font-title;
             font-weight: bold;
@@ -130,7 +134,7 @@ nav {
 [class*='menu-icon-line-'] {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: #54775e;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -148,6 +152,7 @@ nav {
 }
 
 .fadeInDown {
+    
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -183,6 +188,7 @@ nav {
 
 
 .fadeOutUp {
+    
     -webkit-animation-name: fadeOutUp;
     animation-name: fadeOutUp;
     -webkit-animation-duration: 1s;
@@ -555,6 +561,11 @@ footer {
         font-size: 3rem;
     }
 
+    .menu-top {
+        background-color: #f4ffee;
+        line-height: normal;
+    }
+
     nav {
         
         ul {
@@ -576,8 +587,8 @@ footer {
             margin-top: 10px;
         }
     }
-    .menu1, .menu2 {
-        opacity: 0;
+    .menu--display {
+        display: none;
     }
     .menu-icon-open-close {
         display: inline-block;
